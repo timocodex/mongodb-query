@@ -54,11 +54,16 @@ output:
 #### 6. Melihat struktur collection student
 input:
 ```
-db.createCollection('student')
+var students = db.student.findOne()
+for(var key in students) {print(key);}
 ```
 output:
 ```
-{ "ok" : 1 }
+_id
+studentId
+name
+address
+department
 ```
 #### 7. Menginputkan 5 data ke dalam collection department
 input:
